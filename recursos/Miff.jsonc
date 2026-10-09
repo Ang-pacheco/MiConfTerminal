@@ -1,0 +1,142 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+	"type": "kitty-direct",
+	"source":"~/imgff/*.png",	
+	"width": 27,
+	"height": 18,
+	"padding":{
+		"top": 2,
+		"left": 3,
+		"right": 3,
+		"down": 1
+	}
+
+    },
+    
+    "display": {
+        "key": {
+            "width": 11
+        },
+        "bar": {
+            "char": {
+                "elapsed": "=",
+                "total": "-"
+            },
+            "width": 20
+        },
+        "percent": {
+            "type": 3
+        }
+    },
+
+    "modules": [
+        "break",
+
+        {
+            "type": "custom",
+            "format": "\u001b[92m┌───────────────────────────󰋊 SLAAC TALE 󰋊────────────────────────┐"
+        },
+        
+        
+    
+        
+    
+        
+        {
+            "type": "memory",
+            "key":"│ Memory",
+            "keyColor":"red"
+        },
+        {
+            "type": "disk",
+            "key":"│ Disk",
+            "folders": "/",
+            "keyColor": "35"
+        },
+        {
+            "type": "battery",
+            "key": "│ Battery",
+            "keyColor":"33"
+        },
+        
+
+
+        // 󰋊 Pie de página Hardware 󰋊
+        {
+            "type": "custom",
+            "format": "\u001b[92m└─────────────────────────────────────────────────────────────────┘"
+        }, 
+        {
+            "type": "colors",
+            "paddingLeft": 25,
+            "symbol": "circle"
+        },
+	
+       
+        {
+            "type": "custom",
+            "format": "\u001b[93m┌───────────────────────────󰻠 System 󰻠────────────────────────────┐"
+        },
+        {
+            "type": "os",
+            "key": " OS",
+            "keyColor": "yellow",
+            "format": "{name}"
+        },
+        {
+            "type": "wm",
+            "key": "│ ├",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "de",
+            "key": "│ ├",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "kernel",
+            "key": "│ └",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[93m└─────────────────────────────────────────────────────────────────┘"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[94m┌─────────────────────────󰔎 Theming/Other 󰔎───────────────────────┐"
+        },
+        {
+            "type": "shell",
+            "key": " sh",
+            "keyColor": "blue",
+            "format": "{1}"
+        },
+        {
+            "type": "wmtheme",
+            "key": "│ ├󰉼",
+            "keyColor": "blue"
+        },
+        {
+            "type": "terminal",
+            "key": "│ ├",
+            "keyColor": "blue",
+            "format": "{1}"
+        },
+        {
+            "type": "packages",
+            "key": "│ └󰏖",
+            "keyColor": "blue"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[94m└─────────────────────────────────────────────────────────────────┘"
+        },
+	
+        "break",
+		
+      
+    ]
+}
