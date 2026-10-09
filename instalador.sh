@@ -2,11 +2,9 @@
 
 echo "Hola y bienbenido a mi instalador de mi fastfetch con bash :D"
 
-read opcion
-
 echo "a continuacion se reemplazara el fastfet conf por el mio"
 
-read ok
+read 
 
 #Instalar Fastfetch luego reemplazar el .config con mi .config (miff.conf)
 #instalacion
